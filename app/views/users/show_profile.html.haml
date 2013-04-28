@@ -1,0 +1,25 @@
+- provide :title, 'Profile'
+
+.row
+  .eight.columns.offset-by-two
+    .th
+      .vertical-align2
+        .panel.radius
+          .td
+            .right
+              %h4 Total number of invites:
+              .header
+                %h1.offset-by-five
+                  = @user.invitation_count
+            = image_tag @user.avatar_path
+            .right
+              %h6
+                Email:
+                = @user.email
+              %h6 
+                Gender:
+                = @user.gender
+            %h4
+              = @user.full_name
+            %h6
+              = @user.username

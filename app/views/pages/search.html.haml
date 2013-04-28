@@ -1,0 +1,21 @@
+- provide :title, "Search"
+
+#search
+  .row
+    .half-column.centerify
+      = form_tag "/filter", method: :post do
+        = text_field_tag :applicant, '', placeholder: 'Search for applicant here..'
+
+  
+  - if @applicants.present?
+    .row
+      .twelve.columns
+        - @applicants.each do |applicant|
+          .four.columns
+            .centerify
+              = link_to  show_applicant_path(applicant) do
+                .panel.search-box
+                  = image_tag applicant.avatar_path
+                  %h4= applicant.full_name
+    :javascript
+      humane.log("Showing #{@applicants.count} search #{@applicants.count > 1 ? "results" : "result"}")

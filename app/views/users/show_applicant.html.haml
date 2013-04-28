@@ -1,0 +1,116 @@
+- provide :title, "Showing data for #{@user.full_name}"
+
+:css 
+  #margin-push { margin-top: 75px; }
+
+#margin-push
+
+.row
+  .six.columns
+    .panel.radius
+      %h1
+        = @user.full_name
+      - @user.informations.each do |information|
+        = information.address
+        %br
+        = information.birthday
+        %br
+        = information.email
+        %br
+        = information.gender
+        %br
+        = information.relationship_status
+  .six.columns
+    .panel.radius
+      %h1
+        Search Filter
+      .right
+        = check_box_tag "events_cb", 1, true
+        Events
+      = check_box_tag "photos_cb", 1, true
+      Photos
+      %br
+      = check_box_tag "mutual_friends_cb", 1, true
+      Mutual Friends / 2nd Degree
+      %br
+      = check_box_tag "groups_cb", 1, true
+      Groups
+      %br
+      = check_box_tag "likes_cb", 1, true
+      Likes
+- if @user.images.present?
+  #photos
+    .row
+      .twelve.columns
+        - @user.images.each do |image|
+          .three.mobile-two.columns
+            .crop
+              = image_tag image.link
+            .panel
+              %p Sample Images
+
+- if @user.events.present?
+  #events
+    .row
+      .twelve.columns
+        %h2 User Events
+        - @user.events.each do |event|
+          .panel
+            .two.columns
+              %h4
+                = event.name
+            .five.columns
+              %p 
+                = event.place
+            .five.columns
+              %p 
+                = event.time
+            .clearfix
+
+-if @user.mutual_friends.present?
+  #mutual_friends
+    .row
+      .twelve.columns
+        %h2 
+          Find Some Recommendations for 
+          = @user.first_name
+          = @user.last_name
+        - @user.mutual_friends.each do |friend|
+          .two.columns.panel.float
+            =image_tag friend.picture
+            %p
+              = link_to "Ask me!", "http://facebook.com/#{friend.username}", class: "tiny button"
+            %h5
+              =friend.name
+
+-if @user.groups.present?
+  #groups
+    .row
+      .twelve.columns
+        %h2 Commonly Used Groups
+        - @user.groups.each do |group|
+          - if group.bookmard_order < 999999999
+            .twelve.columns.panel
+              %h3
+                =group.name
+              %p
+                = group.description
+                Frequency of use: 
+                %span.success.label
+                  = group.bookmard_order
+              = link_to "Checkout Group", group.link, class: "small button"
+  
+-if @user.likes.present?
+  #likes
+    .row
+      .twelve.columns
+        %h2 Likes
+        - @user.likes.each do |like|
+          .two.columns.panel.like
+            .like-content
+              %h5
+                =like.name
+              %p
+                = like.category
+            = link_to "Checkout Like", like.link, class: "tiny button"
+.clearfix

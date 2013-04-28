@@ -1,0 +1,277 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.facebook-logo {
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.signin{
+  position: relative;
+  display: inline;
+}
+
+.current-user{
+  font-size: 2em;
+  color: #fff;
+}
+
+.centerify {
+  text-align: center;
+  margin: 0 auto;  
+}
+
+#pricing {
+  margin: 40px 0px;
+
+  h2 {
+    text-shadow: 0px 1px #444;
+    font-size: 48px;
+    margin: 10px;
+  }//element h2
+
+  .columns {
+    #first .title {
+      background: #32C856;
+      background: -webkit-linear-gradient(top, #32C856 0%, #019625 100%);
+      background: -moz-linear-gradient(top, #32C856 0%, #019625 100%);
+      background: -ms-linear-gradient(top, #32C856 0%, #019625 100%);
+      background: -o-linear-gradient(top, #32C856 0%, #019625 100%);
+      background: linear-gradient(top, #32C856 0%, #019625 100%);
+    }
+    #second .title {
+      background: #21A3E5;
+      background: -webkit-linear-gradient(top, #21A3E5 0%, #0082C4 100%);
+      background: -moz-linear-gradient(top, #21A3E5 0%, #0082C4 100%);
+      background: -ms-linear-gradient(top, #21A3E5 0%, #0082C4 100%);
+      background: -o-linear-gradient(top, #21A3E5 0%, #0082C4 100%);
+      background: linear-gradient(top, #21A3E5 0%, #0082C4 100%);
+    }
+    #third .title {
+      background: #FE6332;
+      background: -webkit-linear-gradient(top, #FE6332 0%, #CC3100 100%);
+      background: -moz-linear-gradient(top, #FE6332 0%, #CC3100 100%);
+      background: -ms-linear-gradient(top, #FE6332 0%, #CC3100 100%);
+      background: -o-linear-gradient(top, #FE6332 0%, #CC3100 100%);
+      background: linear-gradient(top, #FE6332 0%, #CC3100 100%);
+    }
+  }
+
+}//id pricing
+
+#features {
+  margin: 40px 0px;
+
+  h2 {
+
+    text-shadow: 0px 1px #444;
+    font-size: 48px;
+    margin: 10px;
+
+  }//element h2
+
+  p {
+    text-align: justify;
+    text-justify: newspaper;
+  }
+
+  .twelve {
+
+    background: rgba(186, 234, 234, 0.8);
+    border-bottom: 4px solid rgba(144, 200, 200, 1);
+    border-right: 4px solid rgba(144, 200, 200, 1);
+    padding: 40px 10px;
+    top: -10px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    border-radius: 20px 0px 20px 0px;
+
+  }
+
+  .glyph {
+    font-size: 100px;
+    position: relative;
+    left: 31%;
+    top: -50px;
+    opacity: 0.6;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+}//id features
+
+#search {
+
+  margin: 75px 0px;
+ 
+  .half-column {
+    width: 720px;
+    max-width: 90%;
+  }  
+  
+  form {
+
+    input{
+
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+
+      height: 90px;
+      font-size: 36px;
+      font-style: italic;
+      outline: none;
+
+      text-align: center;
+      letter-spacing: 1px;
+
+      -webkit-transition: all 1000ms ease-in-out;
+      -moz-transition: all 1000ms ease-in-out;
+      -ms-transition: all 1000ms ease-in-out;
+      -o-transition: all 1000ms ease-in-out;
+      transition: all 1000ms ease-in-out;
+
+      &:hover {
+        -webkit-box-shadow: 0px 1px 2px 2px #56FAFA;
+        -moz-box-shadow: 0px 1px 2px 2px #56FAFA;
+        box-shadow: 0px 1px 2px 2px #56FAFA;
+      }
+    }
+
+  }//element form
+
+}//id search
+
+#about-us {
+  height: 10%;
+}
+
+#footer {
+  margin-top: 125px;
+}
+
+
+#socialResume:hover{
+	opacity: 0.8;
+}
+
+.footer-buttons{
+    text-align: center;
+    text-decoration: underline;	
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+	opacity: 0.7;
+}
+
+.inline{
+	display: inline;
+}
+
+.emboss {
+   text-shadow:
+      0 1px 0 rgba(0, 0, 0, 0.8), /* shadow */
+      0 -1px 0 rgba(255, 255, 255, 1.0); /* highlight */
+  position: relative;
+  top: 210px;
+  height: 200px;
+  padding: 25px;
+  }
+
+.impress {
+   text-shadow:
+      0 -1px 0 rgba(0, 0, 0, 0.8), /* shadow */
+      0 1px 0 rgba(255, 255, 255, 0.5); /* highlight */ 
+  position: relative;
+  top: 210px;
+  height: 200px;
+  padding: 25px;
+  }
+
+.separator{
+  width:60%;
+  height:10px;
+  border-top: 5px dotted rgba(255,255,255,0.3);
+  position: relative;
+  top: 10px;
+}
+
+.vertical-sep{
+  background: url('separator.png');
+  position: relative;
+}
+
+#header-slide {
+    position: fixed;
+    top:-50px;
+    width: 100%;
+    background: black;
+}
+
+#header-content {
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    color: white;
+}
+
+.top-bar.fixed{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+}
+
+.panel {
+  -webkit-border-radius: 20px 0px 20px 0px;
+  -moz-border-radius: 20px 0px 20px 0px;
+  border-radius: 20px 0px 20px 0px;
+
+  border-right: 3px solid #ACACAC;
+  border-bottom: 3px solid #ACACAC;
+
+  &:hover {
+    -webkit-box-shadow: 0px 1px 2px 2px #56FAFA;
+    -moz-box-shadow: 0px 1px 2px 2px #56FAFA;
+    box-shadow: 0px 1px 2px 2px #56FAFA;
+  }
+}
+
+.clearfix { clear: both; }
+
+.submitting-application{
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    position: relative;
+    letter-spacing: 0.5pt;
+    word-spacing: -1.3pt;
+    color: #4237F2;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px rgba(0,0,234,1);
+}
+
+.thank-you{
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 100px;
+  letter-spacing: 0.7pt;
+  word-spacing: -1.3pt;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.facebook-signin{
+  position: relative;
+  top: -12px;
+  opacity: 0.9;
+}
+
+.facebook-signin:hover{
+  position: relative;
+  top: -12px;
+  opacity: 1;
+}

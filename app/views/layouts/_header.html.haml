@@ -1,0 +1,22 @@
+%nav.top-bar.fixed
+  %ul
+    %li.name
+      #socialResume
+        %h1=link_to "Larks", root_path
+    %li.divider
+
+  -# unless controller.controller_name.eql? 'pages' and controller.action_name.eql? 'thank_you'
+  %section
+    %ul.left#nav
+      - if startup_signed_in?
+      - else
+        %li= link_to "Leaderboard", '#'
+        %li= link_to "Explore", '#'
+        %li= link_to "About Us", '#'
+
+    %ul.right
+      - if startup_signed_in?
+        %li= link_to "Log Out", destroy_startup_session_path, method: :delete
+      -if user_signed_in?
+        %li= link_to "Log Out", destroy_user_session_path, method: :delete
+

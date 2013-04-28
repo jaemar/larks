@@ -1,0 +1,14 @@
+- provide :title, "Home"
+
+.v-spacer60
+.centerify
+  .social-resume
+    Larks
+  %h4.subheader{:style => "color: white;"}= "Discover potential and emerging startups, 'nuff said."
+= render 'pricing' unless user_signed_in? || startup_signed_in?
+.pricing-wrapper
+  = render 'features'
+.v-spacer20
+.centerify
+  = render 'about'
+.v-spacer60

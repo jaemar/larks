@@ -1,0 +1,17 @@
+- provide :title, "Send Applications"
+.row
+  .six.column.offset-by-three
+    .vertical-align
+      .panel.radius
+        .header
+          %h4 Send Request Application:
+        .body
+          %br
+          = form_tag '/invitation' do
+            .inputs
+              = label_tag "Email:"
+              = text_field_tag :email, nil, placeholder: "Enter email address here."
+            .actions
+              %br
+              = submit_tag "Send", class: "button radius success twelve"
+

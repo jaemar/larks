@@ -1,0 +1,40 @@
+%footer.row
+  .twelve.columns
+    .row
+      .four.columns
+        .inline
+          .social-plugins
+            %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsocialresume.herokuapp.com&send=false&layout=button_count&width=90&show_faces=false&font&colorscheme=light&action=like&height=21&appId=307020496060616", :style => "border:none; overflow:hidden; width:90px; height:21px;"}
+            :erb
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="SocialResumePH" data-related="rbmrclo,acedimasuhid,akosipc,harveyico05" data-hashtags="SocialResumePH">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          %a{:href => "http://www.proudcloud.net", :target => '_blank', :title => ":build => a better web"} &copy; Proudcloud.net
+          %a{:href => "http://www.apptivate.co", :target => '_blank', :title => "Buy iphone apps without a credit card!"} | Apptivate.co
+      .four.columns
+        %center
+          %span.glyph.social= link_to "d", 'https://www.facebook.com/pages/Social-Resume/546800158685356?fref=ts', :target => '_blank', :title => "Like us on Facebook!"
+          %span.glyph.social= link_to "e", 'https://twitter.com/SocialResumePH', :target => '_blank', :title => "Follow us on Twitter!"
+      .four.columns
+        %ul.link-list.right
+          %li
+            %a{:href => "javascript:UserVoice.showPopupWidget();", :title => "We would love to hear your voice!"} Feedback
+
+:javascript
+  
+  $('#footer .row ul li:first').hover(function() {
+    $(this).addClass("footer-buttons");
+    }, function() {
+    $(this).removeClass("footer-buttons");
+  });
+
+  $('#footer .row ul li:nth(1)').hover(function() {
+    $(this).addClass("footer-buttons");
+    }, function() {
+    $(this).removeClass("footer-buttons");
+  });
+
+  $('#footer .row ul li:nth(2)').hover(function() {
+    $(this).addClass("footer-buttons");
+    }, function() {
+    $(this).removeClass("footer-buttons");
+  });

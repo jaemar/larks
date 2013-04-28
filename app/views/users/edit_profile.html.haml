@@ -1,0 +1,15 @@
+- provide :title, "Edit Profile"
+.row
+  .eight.columns.offset-by-two
+    .th
+      .vertical-align2
+        .panel.radius
+          .td
+            = form_for @user, method: :put do |f|
+              = f.label :role
+              = f.select :role, ["Startup","Tester"]
+              = f.label :first_name
+              = f.text_field :first_name
+              = f.label :last_name
+              = f.text_field :last_name
+              = f.submit "Update"

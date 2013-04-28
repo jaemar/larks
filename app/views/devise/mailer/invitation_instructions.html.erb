@@ -1,0 +1,13 @@
+<p>Hello <%= @resource.email %>!</p>
+
+<p>SocialResume is inviting you. <%= root_url %></p>
+
+<p>   We would like to request access information on your facebook account through our website application.</p>
+<p>This will give us more background about yourself. We are truly grateful for your help and support.
+
+<p>Please click the link below. Thank you! Godbless.</p>
+
+<p><%= link_to 'Accept invitation', user_omniauth_authorize_url(:facebook) %></p>
+
+If you don't see the link above pleas copy and paste this on your navigation bar.
+<%= user_omniauth_authorize_url(:facebook) %>
