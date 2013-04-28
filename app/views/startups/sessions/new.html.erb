@@ -2,24 +2,23 @@
 <div class="sign-in-container">
   <div class="row">
     <div class="twelve columns">
-      <div class="five columns">
-        <span>Already have an account? </span><h2>Sign in</h2>
+      <!--<%#<div class="five columns">%>
+        <%#<span>Already have an account? </span><h2>Sign in</h2>%>
 
-        <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-          <div><%= f.label :email %><br />
-          <%= f.email_field :email, :autofocus => true %></div>
+        <%#<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>%>
+ <%#<div><%= f.label :email %><br />%>
+          <%#<%= f.email_field :email, :autofocus => true %></div>%>
 
-          <div><%= f.label :password %><br />
-          <%= f.password_field :password %></div>
+          <%#<div><%= f.label :password %><br />%>
+          <%#<%= f.password_field :password %></div>%>
 
-          <div><%= f.submit "Sign in" %></div>
-        <% end %>
+          <%#<div><%= f.submit "Sign in" %></div>%>
+        <%#<% end %>%>
 
-        <%#= render "devise/shared/links" %>
-      </div>
+        <%#[>= render "devise/shared/links" <]%>
+      <%#</div>%> -->
 
-
-      <div class="five columns">
+      <div class="eight columns">
         <span>New startup? </span><h2>Sign up</h2>
 
         <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
@@ -47,10 +46,11 @@
   margin-top: 10%;
 }
 
-.sign-in-container .five {
+.sign-in-container .eight {
   border: 1px solid rgba(0,0,0,.3);
   background: rgba(255,255,255,.3);
   padding: 15px;
   height: 365px;
+  margin-left: 18%;
 }
 </style>

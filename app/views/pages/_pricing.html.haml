@@ -3,3 +3,53 @@
     .twelve.columns
       .five.columns#first.button.success= link_to 'I\'m a Startup', new_startup_session_path, style: "color: #FFF"
       .five.columns#third.button= link_to 'I\'m a User', user_omniauth_authorize_path(:facebook), style: "color: #FFF"
+
+  .row
+    .twelve.columns
+      .five.columns.whats-in-me
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Create a campaign for your product
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Find your audience through our demographics
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Engage and communicate with early adopters
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Gain accurate feedbacks from early adopters
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Help other startups
+      .five.columns.whats-in-me
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Exclusive promos that are totally free
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Discover fresh startups and give feedback
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Get early access to their beta product
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Get yourself on top of the leaderboard
+        .whats-in-me-text
+          %span.glyph.enclosed= "f" 
+          Help a startup
+
+:css
+  .whats-in-me{
+    border-left:1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding-left: 10px;
+    background: rgba(255,255,255,.3);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .whats-in-me-text{
+    margin: 5px;
+  }
