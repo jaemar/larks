@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     if request.env['omniauth.origin']
       thank_you_path
     else
-      thank_you_path
+      info_startups_path
     end
   end
 

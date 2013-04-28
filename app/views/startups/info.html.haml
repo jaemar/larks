@@ -1,0 +1,34 @@
+- provide :title, "Complete Info"
+
+.sign-in-container
+  .row
+    .twelve.columns
+      .eight.columns.eighttext
+        %h3 Tell me about your startup
+    .twelve.columns
+      .eight.columns.eightfield
+        = form_for @startup do |f|
+          = f.label :startup_name
+          = f.text_field :startup_name
+          = f.label :target_market
+          = f.text_field :target_market
+          = f.label :description
+          = f.text_area :description, rows: 10
+          = f.submit "Submit"
+
+:css
+  .sign-in-container {
+    margin-top: 10%;
+  }
+
+  .sign-in-container .eightfield {
+    border: 1px solid rgba(0,0,0,.3);
+    background: rgba(255,255,255,.3);
+    padding: 15px;
+    height: 385px;
+    margin-left: 18%;
+  }
+
+  .sign-in-container .eighttext {
+    margin-left: 18%;
+  }

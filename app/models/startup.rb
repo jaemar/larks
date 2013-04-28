@@ -2,7 +2,7 @@ class Startup < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable#, :invitable
 
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :group_id, :access_token
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :group_id, :access_token, :startup_name, :target_market, :description
 
   validates_presence_of :email
 

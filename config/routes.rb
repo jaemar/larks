@@ -15,6 +15,11 @@ Larks::Application.routes.draw do
   authenticated do
     root to: 'pages#index'
   end
+  resources :startups do
+    collection do
+      get :info
+    end
+  end
 
   resources :users
   root to: 'pages#index'
