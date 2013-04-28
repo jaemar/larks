@@ -1,0 +1,10 @@
+development:
+  app_id: "460502313985913"
+  secret_key: "7290646527d5c54ae95749c9890bbe37"
+testt:
+  app_id: "460502313985913"
+  secret_key: "7290646527d5c54ae95749c9890bbe37"
+production:
+  app_id: "460502313985913"
+  secret_key: "7290646527d5c54ae95749c9890bbe37"
+
